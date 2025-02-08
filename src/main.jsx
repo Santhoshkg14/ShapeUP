@@ -12,6 +12,8 @@ import Contact from './components/Contact/Contact.jsx'
 import Transform from './components/Transform/Transform.jsx'
 import Login from './components/Login/Login.jsx'
 
+const basename = import.meta.env.VITE_BASENAME || '/';
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
@@ -25,7 +27,8 @@ const router = createBrowserRouter(
         <Route path=':userid' element={<User />} />
       </Route>      
     </Route>
-  )
+  ),
+  { basename }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
