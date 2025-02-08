@@ -43,7 +43,7 @@ export default function Home() {
             <div className="flex justify-center">
               <img
                 className="w-full max-w-sm h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
-                src="https://mail.google.com/mail/u/0?ui=2&ik=55c6d384ec&attid=0.1&permmsgid=msg-f:1823482305529500436&th=194e4f7ee34bd314&view=fimg&fur=ip&permmsgid=msg-f:1823482305529500436&sz=s0-l75-ft&attbid=ANGjdJ-5olILp1m5uz7vWwjxYHrc4JEnTmUcj4XjK-1HkkUfC1OcT9AfJFiyNw8-t2fpm7BiJZXwgP5XPFoYEtnHp5qAQAHo1ohekB22V31ZJ8b_Gf-9ElbxJgtL_k0&disp=emb&realattid=9D06580B-9598-4872-9B8B-251B0ED43336&zw"
+                src="https://github.com/Santhoshkg14/ShapeUP/blob/main/public/Santhosh.jpg?raw=true"
                 alt="Workout"
               />
             </div>
