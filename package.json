@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Santhoshkg14/ShapeUP",
+  "homepage": "https://Santhoshkg14.github.io/ShapeUP",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
