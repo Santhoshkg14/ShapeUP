@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Heart from '../Heart';
+
+
 
 export default function Transform() {
+
+  const [showHeart, setShowHeart] = useState(false);
+
+  const handleSendHeart = () => {
+    console.log('Sending heart...');
+    setShowHeart(true);
+
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 3000);
+  };
+
   return (
     <div className="py-16 bg-gradient-to-r from-purple-500 to-pink-500">
       <div className="container mx-auto px-6 md:px-12 xl:px-6">
@@ -19,10 +34,15 @@ export default function Transform() {
             />
           </div>
           <div className="mt-6 text-center">
-            <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors">
+            <button onClick={handleSendHeart} className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors">
               Start Your Journey
             </button>
           </div>
+          {showHeart && (
+            <div className="mt-4 flex justify-center">
+              <Heart />
+            </div>
+          )}
         </div>
       </div>
     </div>

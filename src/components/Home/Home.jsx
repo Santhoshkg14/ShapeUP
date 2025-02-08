@@ -1,13 +1,14 @@
+// Home.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BMICalculator from '../BMICalculator/BMICalculator';
+import Modal from '../Modal/Modal';
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-green-400 to-blue-500 relative">
-      {/* Hero Section */}
       <header className="relative py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center relative z-10">
           <h2 className="text-3xl sm:text-5xl font-bold text-white">
@@ -35,11 +36,9 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Featured Section */}
       <main className="relative z-10 py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Image Section (Left) */}
             <div className="flex justify-center">
               <img
                 className="w-full max-w-sm h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
@@ -47,7 +46,6 @@ export default function Home() {
                 alt="Workout"
               />
             </div>
-            {/* Text Section (Right) */}
             <div className="text-white flex flex-col text-center items-center place-content-center space-y-6">
               <h3 className="text-2xl sm:text-4xl font-bold">
                 Step into the Fitness Revolution!
@@ -125,26 +123,11 @@ export default function Home() {
               >
                 Open BMI Calculator
               </button>
-
-              {showModal && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                  <div className="bg-white p-3 rounded-md">
-                    <button
-                      onClick={() => setShowModal(false)}
-                      className="text-red-600 mb-1"
-                    >
-                      Close
-                    </button>
-                    <BMICalculator />
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
       </main>
 
-      {/* Testimonials Section */}
       <section className="relative z-10 py-16 bg-white">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">
@@ -167,7 +150,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Call to Action Section */}
       <section className="relative z-10 py-16 bg-gradient-to-r from-slate-400 to-emerald-400">
         <div className="container mx-auto px-4 text-center text-white">
           <h3 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -184,6 +166,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <BMICalculator />
+        </Modal>
+      )}
     </div>
   );
 }

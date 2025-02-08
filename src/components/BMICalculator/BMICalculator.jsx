@@ -33,7 +33,7 @@ export default function BMICalculator() {
 
   return (
     <div className="bg-emerald-400 p-6 rounded-lg shadow-lg max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-center mb-4">Calculate Your BMI</h2>
+      <h2 className="text-2xl font-bold text-center mb-4 text-white">Calculate Your BMI</h2>
       <form onSubmit={calculateBMI} className="space-y-4">
         {/* Gender Selection */}
         <div>
@@ -102,8 +102,8 @@ export default function BMICalculator() {
       </form>
       {bmi && (
         <div className="mt-6 text-center">
-          <p className="text-xl font-semibold">Your BMI is: {bmi}</p>
-          <p className="mt-2 text-lg">{message}</p>
+          <p className="text-xl font-semibold text-white">Your BMI is: {bmi}</p>
+          <p className="mt-2 text-lg text-white">{message}</p>
         </div>
       )}
     </div>

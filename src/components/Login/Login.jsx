@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import Heart from '../Heart';
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showHeart, setShowHeart] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
     // Add your authentication logic here.
-    console.log('Logging in with:', email, password);
+    //console.log('Logging in with:', email, password);
+    setShowHeart(true);
+    
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 3000);
   };
 
   return (
@@ -76,6 +83,11 @@ export default function Login() {
             </a>
           </p>
         </form>
+        {showHeart && (
+          <div className="mt-4 flex justify-center">
+            <Heart />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
+import Heart from '../Heart';
 
 function Contact() {
+
+  const [showHeart, setShowHeart] = useState(false);
+
+  const handleSendHeart = () => {
+    console.log('Sending heart...');
+    setShowHeart(true);
+
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 3000);
+  };
+
   return (
     <div className="py-16 bg-gradient-to-r from-green-400 to-blue-500">
       <div className="container mx-auto px-6 md:px-12 xl:px-6">
@@ -44,11 +57,17 @@ function Contact() {
             </div>
             <button
               type="submit"
+              onClick={handleSendHeart}
               className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition-colors"
             >
               Send Message
             </button>
           </form>
+          {showHeart && (
+            <div className="mt-4 flex justify-center">
+              <Heart />
+            </div>
+          )}
         </div>
       </div>
     </div>
