@@ -13,6 +13,7 @@ import Transform from './components/Transform/Transform.jsx'
 import Login from './components/Login/Login.jsx'
 
 const basename = import.meta.env.VITE_BASENAME || '/';
+console.log('Router basename:', basename); 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
