@@ -5,6 +5,10 @@ function Contact() {
 
   const [showHeart, setShowHeart] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   const handleSendHeart = () => {
     console.log('Sending heart...');
     setShowHeart(true);
@@ -21,7 +25,7 @@ function Contact() {
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             Contact Us
           </h2>
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-gray-700 font-medium">
                 Name
