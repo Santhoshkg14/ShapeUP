@@ -46,12 +46,12 @@ export default function Home() {
                 alt="Workout"
               />
             </div>
-            <div className="text-white flex flex-col text-center items-center place-content-center space-y-6">
-              <h3 className="text-2xl sm:text-4xl font-bold">
+            <div className="text-white flex flex-col items-center justify-center text-center space-y-6 px-4">
+              <h3 className="text-2xl sm:text-4xl font-bold mb-4">
                 Step into the Fitness Revolution!
               </h3>
               <ul className="space-y-3">
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-orange-700 flex-shrink-0"
                     fill="currentColor"
@@ -67,7 +67,7 @@ export default function Home() {
                     Join a community of fearless trailblazers.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-orange-700 flex-shrink-0"
                     fill="currentColor"
@@ -83,7 +83,7 @@ export default function Home() {
                     Shatter limits with our cutting-edge workouts.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-orange-700 flex-shrink-0"
                     fill="currentColor"
@@ -99,7 +99,7 @@ export default function Home() {
                     Ignite your inner power and break boundaries.
                   </span>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center justify-center">
                   <svg
                     className="w-6 h-6 text-orange-700 flex-shrink-0"
                     fill="currentColor"
@@ -116,7 +116,6 @@ export default function Home() {
                   </span>
                 </li>
               </ul>
-
               <button
                 onClick={() => setShowModal(true)}
                 className="px-4 py-2 bg-blue-600 text-white rounded-md w-60"

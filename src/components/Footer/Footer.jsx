@@ -9,7 +9,7 @@ export default function Footer() {
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://media-private.canva.com/Lk6mY/MAGeg1Lk6mY/1/p.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20250207%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250207T152629Z&X-Amz-Expires=90600&X-Amz-Signature=aab7ea0ea37e2b97085c4d90196c98ab0fd95b1eeec1333a573baa4b3a008f22&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2008%20Feb%202025%2016%3A36%3A29%20GMT"
+                                src="https://github.com/Santhoshkg14/ShapeUP/blob/main/public/ShapeUP.jpg?raw=true"
                                 className="mr-3 h-16 rounded-xl"
                                 alt="Logo"
                             />
