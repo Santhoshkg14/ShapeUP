@@ -69,7 +69,7 @@ export default function Home() {
             Welcome to <span className="text-yellow-300">Shape</span>
             <span className="text-red-300">UP</span>
           </h2>
-          <p className="mt-4 text-xl text-gray-100">
+          <p className="mt-4 text-xl italic text-gray-100">
             Your Ultimate Fitness Partner <span className="text-green-400">😊</span>
           </p>
           <div className="mt-8">
@@ -85,8 +85,8 @@ export default function Home() {
         </div>
         <div className="absolute inset-0">
           <img
-            className="w-full h-full object-cover opacity-20"
-            src="https://images.pexels.com/photos/4753987/pexels-photo-4753987.jpeg?auto=compress&cs=tinysrgb&w=600"
+            className="w-full h-full object-cover opacity-40"
+            src="https://github.com/Santhoshkg14/ShapeUP/blob/main/public/Bar.jpeg?raw=true"
             alt="Background"
           />
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -141,7 +141,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -157,7 +157,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
+                    className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -168,7 +168,7 @@ export default function Home() {
                     />
                   </svg>
                   <span className="ml-2">
-                    Embark on your journey to an unstoppable, transformed you.
+                    Fuel your dreams with relentless determination.
                   </span>
                 </li>
               </ul>

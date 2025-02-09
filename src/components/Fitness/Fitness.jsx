@@ -26,10 +26,10 @@ export default function Fitness() {
             />
           </div>
           <div className="md:w-7/12 text-center md:text-left">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-white">
+            <h2 className="text-3xl text-white font-bold md:text-4xl">
               My Workout Plan
             </h2>
-            <p className="mt-4 text-lg md:text-xl text-gray-200">
+            <p className="mt-6 text-lg text-white font-medium">
               Supercharge your fitness journey with our dynamic workout plan!
               Designed to sculpt your body, boost endurance, and ignite your
               passion for health—this plan is your gateway to transformation.
