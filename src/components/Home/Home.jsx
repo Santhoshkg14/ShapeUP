@@ -40,7 +40,7 @@ export default function Home() {
           "Authorization": "Token YOUR_REPLICATE_API_TOKEN"
         },
         body: JSON.stringify({
-          version: "a9758cb2d2f04077a064eef3a986c874fe17f86c24d19d16b198935c60c1e2ce", 
+          version: "a9758cb2d2f04077a064eef3a986c874fe17f86c24d19d16b198935c60c1e2ce",
           input: {
             prompt: "A hyper-realistic fitness portrait of a person with dynamic lighting and a futuristic vibe"
           }
@@ -106,10 +106,10 @@ export default function Home() {
               <h3 className="text-2xl sm:text-4xl font-bold">
                 Step into the Fitness Revolution!
               </h3>
-              <ul className="space-y-3">
-                <li className="flex items-center">
+              <ul className="space-y-5">
+                <li className="flex items-start">
                   <svg
-                    className="w-6 h-6 text-orange-700 flex-shrink-0"
+                    className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -125,7 +125,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-orange-700 flex-shrink-0"
+                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -141,7 +141,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-orange-700 flex-shrink-0"
+                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -157,7 +157,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 text-orange-700 flex-shrink-0"
+                     className="w-6 h-6 text-orange-700 flex-shrink-0 mt-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -187,8 +187,8 @@ export default function Home() {
 
               {/* AI Photo Upload Section */}
               <section className="relative z-10 py-3  object-cover">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-400 p-1 rounded-lg shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4 rounded-lg text-white">
+                <div className="bg-gradient-to-r from-blue-500 to-purple-400 p-1 rounded-lg shadow-xl">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 rounded-lg text-white">
                     Get Your AI Generated Fitness Photo
                   </h3>
                   <div className="flex flex-col items-center">
