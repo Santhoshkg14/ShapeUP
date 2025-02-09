@@ -186,32 +186,30 @@ export default function Home() {
               </div>
 
               {/* AI Photo Upload Section */}
-              <section className="relative z-10 py-3  object-cover">
-                <div className="bg-gradient-to-r from-blue-500 to-purple-400 p-1 rounded-lg shadow-xl">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4 rounded-lg text-white">
-                    Get Your AI Generated Fitness Photo
-                  </h3>
-                  <div className="flex flex-col items-center">
-                    <input
-                      type="file"
-                      accept="image/*"
-                      onChange={handleFileUpload}
-                      className="mb-4"
-                    />
-                    {uploading ? (
-                      <p className="text-gray-600">Generating your photo...</p>
-                    ) : (
-                      aiPhoto && (
-                        <img
-                          src={aiPhoto}
-                          alt="AI Generated Fitness"
-                          className="w-60 max-w-md rounded-lg shadow-lg hover:scale-105"
-                        />
-                      )
-                    )}
-                  </div>
+              <div className="bg-gradient-to-r from-blue-500 to-purple-400 p-1 rounded-lg shadow-xl">
+                <h3 className="text-2xl font-bold  mb-4 rounded-lg text-white">
+                  Get Your AI Generated Fitness Photo
+                </h3>
+                <div className="flex flex-col items-center">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleFileUpload}
+                    className="mb-4"
+                  />
+                  {uploading ? (
+                    <p className="text-gray-600">Generating your photo...</p>
+                  ) : (
+                    aiPhoto && (
+                      <img
+                        src={aiPhoto}
+                        alt="AI Generated Fitness"
+                        className="w-60 max-w-md rounded-lg shadow-lg hover:scale-105"
+                      />
+                    )
+                  )}
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
