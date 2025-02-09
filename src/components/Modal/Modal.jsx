@@ -16,10 +16,10 @@ export default function Modal({ children, onClose }) {
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
       style={{ zIndex: 9999 }}
     >
-      <div className="bg-white p-3 rounded-md righ">
+      <div className="bg-white p-6 rounded-md relative">
         <button
           onClick={onClose} 
-          className="text-red-600 mb-1"
+           className="absolute top-1 right-4 text-red-600"
         >
           Close
         </button>
