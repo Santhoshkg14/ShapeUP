@@ -11,6 +11,7 @@ import Fitness from './components/Fitness/Fitness.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Transform from './components/Transform/Transform.jsx'
 import Login from './components/Login/Login.jsx'
+import SmartCoach from './components/SmartCoach/SmartCoach.jsx'
 
 const basename = import.meta.env.VITE_BASENAME || '/';
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path='Contact' element={<Contact />} />
       <Route path='Transform' element={<Transform />} />
       <Route path='Login' element={<Login />} />
+      <Route path='smart-coach' element={<SmartCoach />} />
       <Route path='user/' element={<User />} >
         <Route path=':userid' element={<User />} />
       </Route>      

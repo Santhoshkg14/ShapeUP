@@ -226,10 +226,10 @@ export default function Home() {
             Join ShapeUP today and embark on a journey to a healthier, happier, and stronger you.
           </p>
           <Link
-            to="#"
+            to="/smart-coach"
             className="inline-flex items-center px-8 py-3 font-medium bg-orange-700 rounded-md hover:bg-orange-600 transition transform hover:scale-105"
           >
-            Get Started
+            Explore Smart Coach
           </Link>
         </div>
       </section>
